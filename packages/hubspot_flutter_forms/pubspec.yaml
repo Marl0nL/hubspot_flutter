@@ -1,0 +1,37 @@
+name: hubspot_flutter_forms
+description: >-
+  Flutter UI helpers for hubspot_flutter — a drop-in HubSpot form widget that renders
+  fields and submits via the client-safe Forms API. Part of the hubspot_flutter toolkit.
+version: 0.1.0
+repository: https://github.com/Marl0nL/hubspot_flutter
+issue_tracker: https://github.com/Marl0nL/hubspot_flutter/issues
+homepage: https://github.com/Marl0nL/hubspot_flutter
+
+# Not publishable as-is because of the mono-repo `path` dependency on `hubspot_flutter`
+# below. Before publishing to pub.dev, switch that to a hosted version
+# constraint and remove this line.
+publish_to: none
+
+topics:
+  - hubspot
+  - forms
+  - widgets
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Mono-repo path dependency on the pure-Dart core. Switch to a hosted version
+  # constraint before publishing to pub.dev (path deps cannot be published).
+  hubspot_flutter:
+    path: ../hubspot_flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # Used only by tests to inject a mock HTTP adapter into HubspotClient.
+  dio: ^5.9.0

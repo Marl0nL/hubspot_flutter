@@ -1,0 +1,34 @@
+# hubspot_flutter mono-repo — melos configuration.
+#
+# melos is OPTIONAL. Each package under packages/ resolves and tests
+# independently (see the root README), so you do not need melos to work on
+# hubspot_flutter. This file is provided so the repo is melos-ready: activate it with
+# `dart pub global activate melos` and run `melos bootstrap`.
+name: hubspot_flutter
+
+packages:
+  - packages/**
+
+command:
+  bootstrap:
+    # Run pub get in each package with the appropriate SDK.
+    runPubGetInParallel: true
+
+scripts:
+  analyze:
+    description: Analyze all packages.
+    run: dart analyze --fatal-infos
+    exec:
+      concurrency: 1
+
+  test:
+    description: Run tests in all packages that have them.
+    run: dart test
+    exec:
+      concurrency: 1
+    packageFilters:
+      dirExists: test
+
+  format:
+    description: Format all Dart code.
+    run: dart format .

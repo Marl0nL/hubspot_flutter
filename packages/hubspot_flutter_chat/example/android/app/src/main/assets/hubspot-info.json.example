@@ -1,0 +1,6 @@
+{
+  "portalId": "1234567",
+  "hublet": "na1",
+  "environment": "PROD",
+  "defaultChatFlow": "support"
+}

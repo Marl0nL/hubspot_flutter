@@ -1,0 +1,6 @@
+{
+  "status": "error",
+  "message": "resource not found",
+  "correlationId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+  "category": "OBJECT_NOT_FOUND"
+}

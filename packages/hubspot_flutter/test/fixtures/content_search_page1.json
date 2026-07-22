@@ -1,0 +1,28 @@
+{
+  "total": 3,
+  "offset": 0,
+  "limit": 2,
+  "results": [
+    {
+      "id": "1001",
+      "score": 12.5,
+      "type": "KNOWLEDGE_ARTICLE",
+      "title": "How to reset your password",
+      "url": "https://help.example.com/kb/reset-password",
+      "description": "Step-by-step guide to resetting your account password.",
+      "language": "en",
+      "domain": "help.example.com",
+      "publishedDate": 1710000000000
+    },
+    {
+      "id": "1002",
+      "score": 9.1,
+      "type": "BLOG_POST",
+      "title": "Security best practices",
+      "url": "https://help.example.com/blog/security",
+      "description": "Keep your account secure.",
+      "language": "en",
+      "domain": "help.example.com"
+    }
+  ]
+}

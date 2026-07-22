@@ -1,0 +1,15 @@
+{
+  "total": 3,
+  "results": [
+    {
+      "id": "7003",
+      "values": {
+        "name": "Cold Brew",
+        "price": 4.0,
+        "in_stock": false,
+        "calories": 15
+      }
+    }
+  ],
+  "paging": {}
+}

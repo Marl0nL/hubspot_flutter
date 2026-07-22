@@ -1,0 +1,13 @@
+{
+  "status": "error",
+  "message": "Error in 'fields.email'. Value 'not-an-email' was not a valid email address",
+  "correlationId": "d3d9446802a44259755d38e6d163e820",
+  "category": "VALIDATION_ERROR",
+  "errors": [
+    {
+      "message": "Value 'not-an-email' was not a valid email address",
+      "errorType": "INVALID_EMAIL",
+      "in": "fields.email"
+    }
+  ]
+}

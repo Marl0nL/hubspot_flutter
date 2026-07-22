@@ -1,0 +1,28 @@
+include: package:lints/recommended.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    todo: ignore
+
+linter:
+  rules:
+    always_declare_return_types: true
+    avoid_dynamic_calls: true
+    cancel_subscriptions: true
+    prefer_final_locals: true
+    prefer_single_quotes: true
+    unawaited_futures: true
+    unnecessary_lambdas: true
+    use_super_parameters: true
+    # Disabled deliberately:
+    # - Sub-clients use private fields with descriptive named params
+    #   (e.g. `{required HubspotHttpClient http}` -> `_http`), which cannot be
+    #   expressed as initializing formals.
+    prefer_initializing_formals: false
+    # - Explicit `if (x != null) 'k': x` map entries read more clearly here than
+    #   the null-aware element syntax.
+    use_null_aware_elements: false

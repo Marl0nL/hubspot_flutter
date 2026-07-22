@@ -1,0 +1,31 @@
+{
+  "total": 3,
+  "results": [
+    {
+      "id": "7001",
+      "values": {
+        "name": "Espresso",
+        "price": 3.5,
+        "in_stock": true,
+        "calories": 5
+      },
+      "createdAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-02-01T00:00:00Z"
+    },
+    {
+      "id": "7002",
+      "values": {
+        "name": "Latte",
+        "price": 4.25,
+        "in_stock": true,
+        "calories": 190
+      }
+    }
+  ],
+  "paging": {
+    "next": {
+      "after": "7002",
+      "link": "https://api.hubapi.com/cms/v3/hubdb/tables/menu/rows?after=7002"
+    }
+  }
+}
