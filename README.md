@@ -57,6 +57,7 @@ your backend for anything authenticated, and uses hubspot_flutter's secret-free
 |---|---|---|
 | [`hubspot_flutter`](packages/hubspot_flutter) | **Pure Dart** | Core HTTP client, pluggable auth, pagination, typed errors, and the client-safe REST modules (Forms, Content Search v2, public HubDB). Backend-tier modules ship as stubs. |
 | [`hubspot_flutter_chat`](packages/hubspot_flutter_chat) | Flutter **plugin** | Platform-channel (Pigeon) bridge over HubSpot's native iOS & Android mobile chat SDKs. |
+| [`hubspot_flutter_chat_web`](packages/hubspot_flutter_chat_web) | Flutter package | Embeds HubSpot's **browser** Conversations widget in a bounded WebView as inline, full-panel chat — the self-hosted alternative to the native SDK bridge, with a link-tap delegate the host app routes. |
 | [`hubspot_flutter_forms`](packages/hubspot_flutter_forms) | Flutter package | Optional UI helpers — e.g. a drop-in HubSpot form widget built on `hubspot_flutter`'s Forms client. |
 
 ## Quick start (client-safe tier)
